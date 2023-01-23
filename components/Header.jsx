@@ -20,10 +20,10 @@ const Header = () => {
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 <Link
-                  className="text-4xl max-md:text-xl text-gray-100 font-bold font-mono p-5"
+                  className="text-3xl max-md:text-xl text-gray-100 font-bold font-mono p-5"
                   href="/"
                 >
-                  TUTKU TAYLAN
+                  TUTKU TAYLAN PORTFOLIO
                 </Link>
 
                 <div className="md:hidden">
