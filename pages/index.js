@@ -23,7 +23,7 @@ export default function Home({ posts, index }) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className={`${styles.innerWidth} grid grid-cols-1 lg:grid-cols-1 gap-12 bg-gradient-to-t from-gray-200`}
+          className={`${styles.innerWidth} grid grid-cols-1 lg:grid-cols-1 gap-12`}
         >
           <motion.div
             variants={fadeIn("up", "spring", index * 0.25, 1.5)}

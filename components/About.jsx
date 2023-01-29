@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
   <section
-    className={`relative z-10 mb-10 h-[600px] bg-gray-800 flex justify-center items-center`}
+    className={`relative z-10 mb-10 h-[600px] bg-white flex justify-center items-center`}
   >
     <div className="bg-[url('/back.png')] bg-cover w-full h-[200px] max-md:h-[150px] absolute -bottom-20 max-md:-bottom-0" />
     <motion.div

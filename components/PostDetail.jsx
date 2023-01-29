@@ -63,14 +63,14 @@ const PostDetail = ({ post }) => {
 
   return (
     <>
-      <div className="bg-white shadow-sm rounded-sm p-20 mt-20">
-        <div className="relative overflow-hidden shadow-lg mb-1 bg-gray-100 p-5">
+      <div className="bg-white rounded-sm p-20 mt-20 max-sm:p-0 max-sm:pt-10">
+        <div className="relative overflow-hidden mb-1 bg-white p-5">
           <Image
             width={700}
             height={500}
             src={post.featuredImage.url}
             alt="donno"
-            className="object-top h-full w-full object-cover  shadow-lg rounded-t-sm lg:rounded-sm"
+            className="object-top h-full w-full object-cover rounded-t-sm lg:rounded-sm"
           />
         </div>
         <div className="px-1 lg:px-0">
