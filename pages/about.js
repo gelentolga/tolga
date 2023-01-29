@@ -1,6 +1,6 @@
 import React from "react";
 
-const about1 = () => {
+const about = () => {
   return (
     <div className="bg-gray-200 mt-40 p-8 py-16 px-40 text-justify">
       <h1 className="text-2xl font-medium">About Me</h1>
@@ -20,10 +20,10 @@ const about1 = () => {
       <p className="text-gray-700 mt-4">
         When I'm not working on design projects, you can find me exploring new
         art and design techniques, experimenting with new software and tools,
-        and staying active through hiking, biking, and rock climbing.
+        and staying active through hiking, and rock climbing.
       </p>
     </div>
   );
 };
 
-export default about1;
+export default about;
