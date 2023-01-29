@@ -64,18 +64,19 @@ const PostDetail = ({ post }) => {
   return (
     <>
       <div className="bg-white rounded-sm p-20 mt-20 max-sm:p-0 max-sm:pt-10">
-        <div className="relative overflow-hidden mb-1 bg-white p-5">
+        <div className="relative overflow-hidden mb-1 bg-white p-5 grid grid-cols-2 gap-8 max-sm:grid-cols-1">
           <Image
             width={700}
             height={500}
-            src={post.featuredImage.url}
+            src={post.image2.url}
             alt="donno"
             className="object-top h-full w-full object-cover rounded-t-sm lg:rounded-sm"
           />
+          <h1 className="mb-3 text-lg font-semibold">{post.title}</h1>
         </div>
         <div className="px-1 lg:px-0">
           <div className="flex items-center mb-2 w-full"></div>
-          <h1 className="mb-3 text-lg font-semibold">{post.title}</h1>
+
           {post.content.raw.children.map((typeObj, index) => {
             const children = typeObj.children.map((item, itemindex) =>
               getContentFragment(itemindex, item.text, item)

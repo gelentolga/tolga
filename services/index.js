@@ -56,6 +56,9 @@ export const getPostDetails = async (slug) => {
         featuredImage {
           url
         }
+        image2 {
+          url
+        }
         categories {
           name
           slug

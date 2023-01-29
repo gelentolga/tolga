@@ -75,7 +75,7 @@ const Header = () => {
                   <Link href="#work">Work</Link>
                 </li>
                 <li className="text-gray-700">
-                  <Link href="/blogs">About</Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li className="text-gray-700">
                   <Link href="/contact">Contact US</Link>

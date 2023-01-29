@@ -12,7 +12,7 @@ const PostCard = ({ post, index }) => {
       className="rounded-md p-0 h-[500px] mb-8 m-4 max-md:m-2"
     >
       <Link href={`/post/${post.slug}`}>
-        <div className="relative overflow-hidden h-[500px] mb-6">
+        <div className="relative overflow-hidden h-[500px] mb-6 ">
           <Image
             src={post.featuredImage.url}
             alt={post.title}
