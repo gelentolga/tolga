@@ -72,7 +72,7 @@ const Header = () => {
             >
               <ul className="items-center justify-center space-y-1 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-gray-700">
-                  <Link href="#work">Work</Link>
+                  <Link href="/#work">Work</Link>
                 </li>
                 <li className="text-gray-700">
                   <Link href="/about">About</Link>
