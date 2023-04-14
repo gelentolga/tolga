@@ -11,12 +11,14 @@ const PostDetails = ({ post }) => {
   if (router.isFallback) {
     return <Loader />;
   }
-
+  const color = {
+    backgroundColor: `${post.color}`,
+  };
   return (
     <>
-      <div className="mx-auto px-10 sm:px-0 mb-8">
+      <div className="mx-auto px-10 max-md:px-2 sm:px-0 mb-8 " style={color}>
         <div className="grid grid-cols-1 gap-12 sm:gap-1">
-          <div className="col-span-1">
+          <div className="col-span-1 px-44 max-lg:px-10 max-md:px-0">
             <PostDetail post={post} />
           </div>
         </div>

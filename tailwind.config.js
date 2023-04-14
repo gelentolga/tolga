@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      Phudu: ["cursive"],
+    },
     extend: {
       backgroundImage: {
         "bg-colorfull": "url('/back.png')",

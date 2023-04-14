@@ -1,29 +1,78 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-import Head from "next/head";
+const AboutPage = () => {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
 
-const About = () => (
-  <div className="flex flex-col items-center p-6 mt-40 mx-20">
-    <Head>
-      <title>About | Graphic Designer</title>
-    </Head>
-    <h1 className="text-2xl font-bold">About</h1>
-    <p className="py-4 text-gray-600">
-      Hi, I'm a graphic designer with a passion for creating beautiful and
-      effective designs. My experience spans across various industries,
-      including advertising, fashion, and technology. My design philosophy is
-      centered around simplicity, creativity, and accessibility.
-    </p>
-    <div className="py-4 mt-10">
-      <h2 className="text-xl font-bold">Skills</h2>
-      <ul className="flex flex-col text-gray-600">
-        <li className="py-2">Adobe Creative Suite</li>
-        <li className="py-2">Branding and Identity Design</li>
-        <li className="py-2">Print Design</li>
-        <li className="py-2">UI/UX Design</li>
-      </ul>
-    </div>
-  </div>
-);
+  const imageVariants = {
+    hidden: {
+      opacity: 0,
+      scale: 0.9,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.3,
+        duration: 0.5,
+      },
+    },
+  };
 
-export default About;
+  return (
+    <motion.div
+      className=" py-12 px-4 sm:px-6 lg:px-8"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <div className="max-w-screen-xl mx-auto">
+        <motion.div
+          className="lg:grid lg:grid-cols-2 lg:gap-8"
+          variants={containerVariants}
+        >
+          <motion.div
+            className="lg:col-span-1 text-justify flex flex-col p-10 justify-center"
+            variants={containerVariants}
+          >
+            <h1 className="text-4xl font-bold text-gray-900 mb-10">About Me</h1>
+            <p className="text-lg mb-4 text-gray-700">
+              Hi, I'm [your name], a frontend developer with [number] years of
+              experience. I specialize in [front-end framework(s)/language(s)]
+              and have worked on projects for clients in industries such as
+              [list industries].
+            </p>
+            <p className="text-lg mb-4 text-gray-700">
+              Some of my key skills include [list skills], and I'm comfortable
+              using tools such as [list design tools].
+            </p>
+            <p className="text-lg mb-4 text-gray-700">
+              In my free time, I enjoy [list hobbies/interests/passions].
+            </p>
+          </motion.div>
+          <motion.div className="lg:col-span-1" variants={imageVariants}>
+            <img
+              src="https://images.pexels.com/photos/2883808/pexels-photo-2883808.jpeg"
+              alt="[your alt text]"
+              className="rounded-full shadow-lg h-[550px]  w-auto object-cover"
+            />
+          </motion.div>
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default AboutPage;

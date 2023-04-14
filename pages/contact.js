@@ -1,97 +1,109 @@
 import React from "react";
-import Head from "next/head";
 import { motion } from "framer-motion";
-import { socials } from "../constants";
-import Image from "next/image";
 
-const Contact = () => (
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0 }}
-    className="flex flex-col items-center p-20 mt-40"
-  >
-    <Head>
-      <title>Contact | Graphic Designer</title>
-    </Head>
-    <motion.h1
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 50, opacity: 0 }}
-      className="text-4xl font-extrabold text-indigo-600"
-    >
-      Let's Connect
-    </motion.h1>
-    <motion.p
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 50, opacity: 0 }}
-      className="py-4 text-gray-700"
-    >
-      If you're interested in working together or just want to say hello, feel
-      free to reach out to me via the following channels:
-    </motion.p>
+const ContactPage = () => {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  const formVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.3,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const buttonVariants = {
+    hover: {
+      scale: 1.05,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
+  return (
     <motion.div
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 50, opacity: 0 }}
-      className="py-4"
+      className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
     >
-      <motion.h2
-        initial={{ y: -25, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 25, opacity: 0 }}
-        className="text-2xl font-bold text-indigo-600"
-      >
-        Get in Touch
-      </motion.h2>
-      <ul className="flex flex-col text-gray-700">
-        <li className="py-2">
-          <motion.div className="flex items-center" whileHover={{ scale: 1.1 }}>
-            <motion.i className="fas fa-envelope fa-2x mr-4 text-indigo-600" />
-            <a className="underline" href="mailto:graphicdesigner@example.com">
-              graphicdesigner@example.com
-            </a>
-          </motion.div>
-        </li>
-        <li className="py-2">
-          <motion.div className="flex items-center" whileHover={{ scale: 1.1 }}>
-            <motion.i className="fab fa-linkedin fa-2x mr-4 text-indigo-600" />
-            <a
-              className="underline"
-              href="https://www.linkedin.com/in/graphicdesigner"
-            >
-              graphicdesigner
-            </a>
-          </motion.div>
-        </li>
-        <li className="py-2">
-          <motion.div className="flex items-center" whileHover={{ scale: 1.1 }}>
-            <motion.i className="fab fa-twitter fa-2x mr-4 text-indigo-600" />
-            <a className="underline" href="https://twitter.com/graphicdesigner">
-              @graphicdesigner
-            </a>
-          </motion.div>
-        </li>
-      </ul>
-      <div className="bg-black">
-        <div className="flex justify-center items-center">
-          <motion.div className="gap-5" whileHover={{ scale: 1.1 }}>
-            {socials.map((social) => (
-              <Image
-                width={24}
-                height={24}
-                key={social.name}
-                src={social.url}
-                alt={social.name}
-                className="object-contain cursor-pointer my-5"
+      <div className="max-w-screen-xl mx-auto">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div className="lg:col-span-1">
+            <h1 className="text-4xl font-bold mb-4 text-gray-900">
+              Contact Me
+            </h1>
+            <p className="text-lg mb-4 text-gray-700">
+              Have a question or want to work together? Send me a message using
+              the form below, or reach out to me via email at [your email
+              address].
+            </p>
+          </div>
+          <motion.div className="lg:col-span-1" variants={formVariants}>
+            <form className="flex flex-col">
+              <label className="text-lg font-medium mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="border border-gray-400 py-2 px-3 mb-4 rounded-lg"
+                type="text"
+                id="name"
+                name="name"
+                required
               />
-            ))}
+              <label className="text-lg font-medium mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="border border-gray-400 py-2 px-3 mb-4 rounded-lg"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <label className="text-lg font-medium mb-2" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                className="border border-gray-400 py-2 px-3 mb-4 rounded-lg"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+              <motion.button
+                variants={buttonVariants}
+                whileHover="hover"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg"
+                type="submit"
+              >
+                Send Message
+              </motion.button>
+            </form>
           </motion.div>
         </div>
       </div>
     </motion.div>
-  </motion.div>
-);
+  );
+};
 
-export default Contact;
+export default ContactPage;

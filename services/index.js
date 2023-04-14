@@ -17,6 +17,7 @@ export const getPosts = async () => {
               }
             }
             createdAt
+            color
             slug
             title
             excerpt
@@ -52,11 +53,66 @@ export const getPostDetails = async (slug) => {
         createdAt
         slug
         title
+        color
         excerpt
+        projectDesc
+        competitiveAnalysis
+        competitiveAnalysis2
+        competitiveAnalysis3
+        projectGoals
+        firstGoal
+        secondGoal
+        solution
+        solution1
+        solution2
+        solution3
+        research
+        primaryResearch
+        secondaryResearch
+        secondary1
+        secondary2
+        secondary3
+        ideation
+        ideationDesc
+        prototyping
+        prototypingDesc1
+        finalDesign
+        finalDesignDesc1
+        finalDesignDesc2
+        finalDesignDesc3
+        finalDesignDesc4
+        lastDesc
         featuredImage {
           url
         }
         image2 {
+          url
+        }
+        image3 {
+          url
+        }
+        ideationImg {
+          url
+        }
+        prototypingImg1 {
+          url
+        }
+        prototypingImg2 {
+          url
+        }
+        finalDesignImg1 {
+          url
+        }
+        finalDesignImg2 {
+          url
+        }
+        finalDesignImg3 {
+          url
+        }
+        finalDesignImg4 {
+          url
+        }
+        finalDesignImg5 {
           url
         }
         categories {

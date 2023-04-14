@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { TypingText } from "../components";
 
 import styles from "../styles";
@@ -8,48 +9,62 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
   <section
-    className={`relative z-10 mb-10 h-[600px] bg-white flex justify-center items-center`}
+    className={`relative z-10 mb-0 h-[750px] max-md:h-[500px] justify-center items-center grid grid-cols-2 max-md:grid-cols-1`}
   >
-    <div className="bg-[url('/back.png')] bg-cover w-full h-[200px] max-md:h-[150px] absolute -bottom-20 max-md:-bottom-0" />
+    <div className="w-full h-full absolute  max-md:-bottom-0" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`flex-col pl-50 max-md:ml-0`}
+      className={` pt-0 max-md:ml-0 `}
     >
-      <TypingText
-        title={`| Finding beautyin the unexpected`}
-        textStyles="text-[50px]"
-        className=""
+      <div className="m-10 text-center max-md:text-center max-md:m-0 max-md:mt-10">
+        <h1 className="font-black text-[80px] max-lg:text-[50px] max-xl:text-[70px] max-md:text-[45px]  text-[#5332fd] drop-shadow-sm font-fasthand">
+          " Creativity *
+        </h1>
+        <h1 className="font-black text-[80px] max-lg:text-[50px] max-md:text-[40px] max-xl:text-[70px] drop-shadow-lg font-fasthand">
+          is intelligence
+        </h1>
+        <h4 className="font-bold text-[60px] max-lg:text-[35px] max-md:text-[30px] max-xl:text-[50px] text-white drop-shadow-lg font-fasthand">
+          having fun."
+        </h4>
+        <h4 className="text-[15px] mt-4">" - Albert Einstein</h4>
+      </div>
+    </motion.div>
+    {/* <motion.div
+      className={`relative h-[500px] max-lg:h-[400px] max-md:h-[200px] `}
+    >
+      <Image
+        src="/logo1.png"
+        height={960}
+        width={500}
+        className="h-full w-full object-contain "
       />
-
-      {/* <motion.p
-        variants={fadeIn("up", "tween", 0, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
-      >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{" "}
-        <span className="font-extrabold text-white">
-          madness of the metaverse
-        </span>{" "}
-        of today, using only{" "}
-        <span className="font-extrabold text-white">VR</span> devices you can
-        easily explore the metaverse world you want, turn your dreams into
-        reality. Let's{" "}
-        <span className="font-extrabold text-white">explore</span> the madness
-        of the metaverse by scrolling down
-      </motion.p> */}
-      {/* <div className={`${styles.flexStart}`}>
-        <motion.img
-          variants={fadeIn("up", "tween", 0.5, 1)}
-          src="/arrow-down.svg"
-          alt="arrow down"
-          className={`w-[36px] h-[56px] object-contain mt-[40px] ml-28 max-md:ml-0`}
-        />
-      </div> */}
+    </motion.div> */}
+    <motion.div
+      whileInView={{
+        x: [0, 0, 0, 0],
+        y: [0, 20, 0, 0],
+        opacity: [1, 1],
+      }}
+      transition={{ duration: 5, repeat: Infinity }}
+      className={`relative h-[500px] max-lg:h-[400px] max-md:h-[200px] grid place-items-center `}
+    >
+      <div className="flex flex-col items-center justify-center">
+        <div className="bg-gray-100 bg-opacity-70 rounded-lg p-4 shadow-2xl flex w-64 max-md:w-34">
+          <span className="text-[40px]">👋</span>
+          <div style={{ marginLeft: 20 }}>
+            <p className="p-text font-fasthand">Hello there, I am</p>
+            <h1 className="text-[40px] font-black font-fasthand">Tolga...</h1>
+          </div>
+        </div>
+        <div className=" bg-gray-100 bg-opacity-60 rounded-lg p-4 -mt-4 -ml-32 shadow-2xl hover:skew-y-12 transition ease-out ">
+          <span className="animate-ping absolute -mt-5 -m-4 inline-flex h-6 w-6 rounded-full bg-[#fb6342] opacity-100"></span>
+          <p className="p-text font-fasthand">Frontend Developer/</p>
+          <p className="p-text font-fasthand">UX-UI Designer</p>
+        </div>
+      </div>
     </motion.div>
   </section>
 );

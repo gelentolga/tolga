@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Fasthand&family=PT+Sans+Narrow:wght@400;700&family=Permanent+Marker&family=Phudu:wght@300;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
+  background-color: #f3d36c;
+  font-family: "Roboto", sans-serif;
   &:before {
     content: "";
     content: "";
@@ -24,7 +24,9 @@ body {
     background-size: cover;
   }
 }
-
+.font-fasthand {
+  font-family: "Permanent Marker", cursive;
+}
 .text-shadow {
   text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
 }
