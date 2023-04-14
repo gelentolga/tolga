@@ -96,7 +96,7 @@ const ContactPage = () => {
                 className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg"
                 type="submit"
               >
-                Send Message
+                Send Message me
               </motion.button>
             </form>
           </motion.div>
