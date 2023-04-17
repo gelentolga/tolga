@@ -63,15 +63,6 @@ const AboutPage = () => {
               In my free time, I enjoy [list hobbies/interests/passions].
             </p>
           </motion.div>
-          <motion.div className="lg:col-span-1" variants={imageVariants}>
-            <Image
-              src="https://images.pexels.com/photos/2883808/pexels-photo-2883808.jpeg"
-              alt="[your alt text]"
-              width={550}
-              height={550}
-              className="rounded-full shadow-lg  w-auto object-cover"
-            />
-          </motion.div>
         </motion.div>
       </div>
     </motion.div>
