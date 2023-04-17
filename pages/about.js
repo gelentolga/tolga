@@ -50,17 +50,16 @@ const AboutPage = () => {
           >
             <h1 className="text-4xl font-bold text-gray-900 mb-10">About Me</h1>
             <p className="text-lg mb-4 text-gray-700">
-              Hi, I'm [your name], a frontend developer with [number] years of
-              experience. I specialize in [front-end framework(s)/language(s)]
-              and have worked on projects for clients in industries such as
-              [list industries].
+              Hi, Im , a frontend developer with years of experience. I
+              specialize in and have worked on projects for clients in
+              industries such as .
             </p>
             <p className="text-lg mb-4 text-gray-700">
-              Some of my key skills include [list skills], and I'm comfortable
-              using tools such as [list design tools].
+              Some of my key skills include, and Im comfortable using tools such
+              as.
             </p>
             <p className="text-lg mb-4 text-gray-700">
-              In my free time, I enjoy [list hobbies/interests/passions].
+              In my free time, I enjoy.
             </p>
           </motion.div>
         </motion.div>
