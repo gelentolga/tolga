@@ -20,7 +20,7 @@ const Header = () => {
             <div>
               <div className="flex items-center justify-between py-1 md:py-5 md:block">
                 <Link
-                  className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#5332fd] font-fasthand p-5"
+                  className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#5332fd] font-Poppins p-5"
                   href="/"
                 >
                   Tolga

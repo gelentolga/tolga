@@ -20,13 +20,13 @@ const About = () => (
       className={` pt-0 max-md:ml-0 `}
     >
       <div className="m-10 text-center max-md:text-center max-md:m-0 max-md:mt-10">
-        <h1 className="font-black text-[80px] max-lg:text-[50px] max-xl:text-[70px] max-md:text-[45px]  text-[#5332fd] drop-shadow-sm font-fasthand">
+        <h1 className="font-black text-[80px] max-lg:text-[50px] max-xl:text-[70px] max-md:text-[45px]  text-[#5332fd] drop-shadow-sm font-Poppins">
           Creativity *
         </h1>
-        <h1 className="font-black text-[80px] max-lg:text-[50px] max-md:text-[40px] max-xl:text-[70px] drop-shadow-lg font-fasthand">
+        <h1 className="font-black text-[80px] max-lg:text-[50px] max-md:text-[40px] max-xl:text-[70px] drop-shadow-lg font-Poppins">
           is intelligence
         </h1>
-        <h4 className="font-bold text-[60px] max-lg:text-[35px] max-md:text-[30px] max-xl:text-[50px] text-white drop-shadow-lg font-fasthand">
+        <h4 className="font-bold text-[60px] max-lg:text-[35px] max-md:text-[30px] max-xl:text-[50px] text-white drop-shadow-lg font-Poppins">
           having fun.
         </h4>
         <h4 className="text-[15px] mt-4"> - Albert Einstein</h4>
@@ -55,14 +55,14 @@ const About = () => (
         <div className="bg-gray-100 bg-opacity-70 rounded-lg p-4 shadow-2xl flex w-64 max-md:w-34">
           <span className="text-[40px]">👋</span>
           <div style={{ marginLeft: 20 }}>
-            <p className="p-text font-fasthand">Hello there, I am</p>
-            <h1 className="text-[40px] font-black font-fasthand">Tolga...</h1>
+            <p className="p-text font-Poppins">Hello there, I am</p>
+            <h1 className="text-[40px] font-black font-Poppins">Tolga...</h1>
           </div>
         </div>
         <div className=" bg-gray-100 bg-opacity-60 rounded-lg p-4 -mt-4 -ml-32 shadow-2xl hover:skew-y-12 transition ease-out ">
           <span className="animate-ping absolute -mt-5 -m-4 inline-flex h-6 w-6 rounded-full bg-[#fb6342] opacity-100"></span>
-          <p className="p-text font-fasthand">Frontend Developer/</p>
-          <p className="p-text font-fasthand">UX-UI Designer</p>
+          <p className="p-text font-Poppins">Frontend Developer/</p>
+          <p className="p-text font-Poppins">UX-UI Designer</p>
         </div>
       </div>
     </motion.div>

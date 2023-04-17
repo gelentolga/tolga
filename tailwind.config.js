@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      Phudu: ["cursive"],
+      Poppins: ["sans-serif"],
     },
     extend: {
       backgroundImage: {

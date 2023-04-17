@@ -167,7 +167,7 @@ const PostDetail = ({ post, index }) => {
         </motion.div>
         <div className="mb-10">
           <h1 className="py-4 text-[30px] font-bold">Solution</h1>
-          <p className="py-4 text-[30px] max-md:text-[25px] font-fasthand mb-10">
+          <p className="py-4 text-[30px] max-md:text-[25px] font-Poppins mb-10">
             {post.solution}
           </p>
           <motion.div
@@ -228,7 +228,7 @@ const PostDetail = ({ post, index }) => {
                 Research
               </span>
             </div>
-            <p className="py-4 font-black text-[20px] font-fasthand mb-5">
+            <p className="py-4 font-black text-[20px] font-Poppins mb-5">
               {post.research}
             </p>
             <div className="grid grid-cols-6 max-md:grid-cols-1 max-md:pb-5 ">
@@ -283,7 +283,7 @@ const PostDetail = ({ post, index }) => {
                 Ideation
               </span>
             </div>
-            <p className="py-4 font-black text-[20px] font-fasthand mb-5">
+            <p className="py-4 font-black text-[20px] font-Poppins mb-5">
               {post.ideation}
             </p>
             <div className="mb-10">
@@ -351,7 +351,7 @@ const PostDetail = ({ post, index }) => {
                 Final Design
               </span>
             </div>
-            <p className="py-4 font-black text-[20px] font-fasthand mb-5">
+            <p className="py-4 font-black text-[20px] font-Poppins mb-5">
               {post.finalDesign}
             </p>
             <div className="mb-10">
