@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const AboutPage = () => {
   const containerVariants = {
@@ -63,10 +64,12 @@ const AboutPage = () => {
             </p>
           </motion.div>
           <motion.div className="lg:col-span-1" variants={imageVariants}>
-            <img
+            <Image
               src="https://images.pexels.com/photos/2883808/pexels-photo-2883808.jpeg"
               alt="[your alt text]"
-              className="rounded-full shadow-lg h-[550px]  w-auto object-cover"
+              width={550}
+              height={550}
+              className="rounded-full shadow-lg  w-auto object-cover"
             />
           </motion.div>
         </motion.div>
