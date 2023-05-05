@@ -11,28 +11,29 @@ const PostCard = ({ post, index }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0, 0.5)}
-      className=" p-0 h-[600px] grid grid-cols-6 max-sm:grid-cols-1 my-20 "
+      className="h-[600px] max-md:h-[350px] flex flex-wrap justify-evenly max-sm:grid-cols-1 my-32 max-md:my-16 "
     >
-      <div className="col-span-2 pl-5 pt-5 max-md:text-center">
+      <div className="pl-24 max-md:pl-0 max-md:text-center ">
         <Link href={`/post/${post.slug}`}>
-          <h3 className=" hover:text-[#fb6342] duration-500 text-3xl">
-            Hey this <br />
-            is my project
+          <h3 className=" hover:text-[#42fbae] font-semibold duration-500 text-white text-3xl max-md:text-xl">
+            {post.title}
           </h3>
           <div className="mt-0">
-            <span className="text-xl">Project name</span>
+            <span className="text-xl font-thins text-white">
+              {post.excerpt}
+            </span>
           </div>
         </Link>
       </div>
-      <div className="col-span-4">
+      <div className="">
         <Link href={`/post/${post.slug}`}>
-          <div className="relative h-[300px] mx-10 max-md:h-[200px] max-lg:h-[200px] flex items-center skew-y-6 max-md:skew-y-0 hover:skew-y-0 transition ease-out bg-gray-100 bg-opacity-70 rounded-lg p-4 shadow-2xl">
+          <div className="relative w-[350px] h-[300px] mx-10 max-md:h-[200px] max-lg:h-[200px] flex items-center skew-y-6 max-md:skew-y-0 hover:skew-y-0 transition ease-out rounded-lg p-4 shadow-2xl shadow-teal-300">
             <Image
               src={post.featuredImage.url}
               alt={post.title}
-              height={960}
-              width={1920}
-              className=" h-[300px] max-md:h-[200px] object-contain max-md:object-cover rounded-lg max-lg:rounded-none  "
+              height={300}
+              width={300}
+              className=" h-fit max-md:h-fit w-fit object-contain max-md:object-cover rounded-b-3xl shadow-2xl shadow-teal-300  "
               id="work"
             />
           </div>

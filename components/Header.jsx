@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 // import styles from "../styles";
@@ -18,17 +19,22 @@ const Header = () => {
         <nav className="w-full z-50 pt-2 max-md:pt-0">
           <div className="justify-between px-4 max-md:px-2 mx-auto lg:max-w-7xl md:items-center md:flex">
             <div>
-              <div className="flex items-center justify-between py-1 md:py-5 md:block">
+              <div className="flex items-center justify-between py-1 md:block">
                 <Link
-                  className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#5332fd] font-Poppins p-5"
+                  className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#ffffff] font-Poppins p-5"
                   href="/"
                 >
-                  Tolga
+                  <Image
+                    width={180}
+                    height={50}
+                    src="/main.gif"
+                    className="brightness-95"
+                  />
                 </Link>
 
                 <div className="md:hidden">
                   <button
-                    className="p-2 text[#eeeeee] rounded-md outline-none focus:border-gray-400 focus:border"
+                    className="p-2 text-[#ffffff] rounded-md outline-none"
                     onClick={() => setNavbar(!navbar)}
                   >
                     {navbar ? (
@@ -71,14 +77,14 @@ const Header = () => {
                 }`}
               >
                 <ul className="items-center justify-center space-y-1 md:flex md:space-x-6 md:space-y-0">
-                  <li className="text[#eeeeee]">
+                  <li className="text-white">
                     <Link href="/#work">Work</Link>
                   </li>
-                  <li className="text[#eeeeee]">
+                  <li className="text-white">
                     <Link href="/about">About</Link>
                   </li>
-                  <li className="text[#eeeeee]">
-                    <Link href="/contact">Contact US</Link>
+                  <li className="text-white">
+                    <Link href="/post/earthly-wear/#contact">Contact US</Link>
                   </li>
                 </ul>
               </div>
@@ -86,6 +92,14 @@ const Header = () => {
           </div>
         </nav>
       </motion.nav>
+      <div className="sticky w-16 max-md:w-11 p-2 top-96 max-md:top-[670px] z-50 flex flex-col justify-center items-center gap-8 bg-black rounded-br-lg rounded-tr-lg bg-opacity-80">
+        <Link href="https://github.com/logos" className="text-white ">
+          <Image width={40} height={40} src="/github-mark-white.png" />
+        </Link>
+        <Link href="https://github.com/logos" className="text-white ">
+          <Image width={40} height={40} src="/linkedin.svg" />
+        </Link>
+      </div>
     </>
   );
 };

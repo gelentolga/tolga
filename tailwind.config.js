@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "bg-colorfull": "url('/back.png')",
+        "bg-colorfull": "url('/seemles1.gif')",
       },
     },
   },

@@ -8,7 +8,7 @@ import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
-  <div className="w-full x` h-[500px] bg-[url('/WESTERN.jpg')] bg-fixed bg-no-repeat bg-cover ">
+  <div className="w-full x` h-[500px] bg-bg-colorfull bg-no-repeat bg-cover ">
     {/* <div className="bg-gray-100 bg-opacity-80 rounded-lg p-4 shadow-2xl text-justify h-full">
       <h1 className="font-black tracking-tighter text-[20px] text-[#5332fd]">
         Hi, I'm [your name], a frontend developer with [number] years of
@@ -19,6 +19,7 @@ const About = () => (
         enjoy [list hobbies/interests/passions].
       </h1>
     </div> */}
+    <div className="w-full h-full absolute  max-md:-bottom-0 bg-black bg-opacity-20" />
   </div>
 );
 

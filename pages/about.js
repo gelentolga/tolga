@@ -48,19 +48,30 @@ const AboutPage = () => {
             className="lg:col-span-1 text-justify flex flex-col p-10 justify-center"
             variants={containerVariants}
           >
-            <h1 className="text-4xl font-bold text-gray-900 mb-10">About Me</h1>
-            <p className="text-lg mb-4 text-gray-700">
+            <h1 className="text-4xl font-bold text-gray-100 mb-10">About Me</h1>
+            <p className="text-lg mb-4 text-gray-100">
               Hi, Im , a frontend developer with years of experience. I
               specialize in and have worked on projects for clients in
               industries such as .
             </p>
-            <p className="text-lg mb-4 text-gray-700">
+            <p className="text-lg mb-4 text-gray-100">
               Some of my key skills include, and Im comfortable using tools such
               as.
             </p>
-            <p className="text-lg mb-4 text-gray-700">
+            <p className="text-lg mb-4 text-gray-100">
               In my free time, I enjoy.
             </p>
+          </motion.div>
+          <motion.div
+            className="lg:col-span-1 text-justify flex flex-col p-10 justify-center"
+            variants={containerVariants}
+          >
+            <Image
+              width={400}
+              height={400}
+              src="/tolga.jpg"
+              className="rounded-full"
+            />
           </motion.div>
         </motion.div>
       </div>
