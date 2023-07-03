@@ -18,7 +18,7 @@ const PostDetails = ({ post }) => {
     <>
       <div className="mx-auto px-10 max-md:px-3 sm:px-0 mb-8 " style={color}>
         <div className="grid grid-cols-1 gap-12 sm:gap-1">
-          <div className="col-span-1 px-60 max-lg:px-10 max-md:px-0">
+          <div className="col-span-1 px-60 max-xl:px-10 max-md:px-0">
             <PostDetail post={post} />
             <CommentsForm slug={post.slug} />
           </div>

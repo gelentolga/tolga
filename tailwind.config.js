@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "bg-colorfull": "url('/seemles1.gif')",
+        "bg-colorler": "url('/Comp-1.gif')",
       },
     },
   },

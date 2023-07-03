@@ -9,9 +9,9 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
   <section
-    className={`relative z-10 mb-0 h-[520px] max-md:h-[360px] justify-center items-start grid grid-cols-1 max-md:grid-cols-1 `}
+    className={`relative z-10 mb-0 h-[520px] max-md:h-[360px] justify-center items-start grid grid-cols-1 max-md:grid-cols-1`}
   >
-    <div className="w-full h-full absolute  max-md:-bottom-0 bg-black bg-opacity-50" />
+    <div className="w-full h-full absolute max-md:-bottom-0" />
     {/* <motion.div
       variants={staggerContainer}
       initial="hidden"

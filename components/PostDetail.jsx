@@ -90,7 +90,7 @@ const PostDetail = ({ post, index }) => {
               alt={post.title}
               height={960}
               width={1920}
-              className=" h-[500px] max-sm:h-[400px] object-cover rounded-lg  "
+              className=" h-[500px] max-sm:h-[400px] max-md:object-cover object-contain rounded-lg  "
               id="work"
             />
           </div>
@@ -206,7 +206,7 @@ const PostDetail = ({ post, index }) => {
               alt={post.title}
               height={960}
               width={1920}
-              className=" h-[500px] max-sm:h-[400px] object-cover rounded-lg  "
+              className=" h-[500px] max-sm:h-[400px] max-md:object-cover object-contain rounded-lg  "
               id="work"
             />
           </div>
@@ -297,7 +297,7 @@ const PostDetail = ({ post, index }) => {
                   alt={post.title}
                   height={960}
                   width={1920}
-                  className=" h-[500px] max-sm:h-[400px] object-cover rounded-lg  "
+                  className=" h-[500px] max-sm:h-[400px] object-contain rounded-lg  "
                   id="work"
                 />
               </div>
@@ -322,7 +322,7 @@ const PostDetail = ({ post, index }) => {
                   alt={post.title}
                   height={960}
                   width={1920}
-                  className=" h-[500px] max-sm:h-[400px] object-cover rounded-lg  "
+                  className=" h-[500px] max-sm:h-[400px] object-cover max-md:object-cover rounded-lg  "
                   id="work"
                 />
               </div>

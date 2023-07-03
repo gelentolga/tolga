@@ -14,27 +14,27 @@ const Header = () => {
         // variants={navVariants}
         // initial="hidden"
         // whileInView="show"
-        className={`h-full backdrop-filter backdrop-blur-sm top-0 sticky z-50 m-0`}
+        className={`h-full backdrop-filter backdrop-blur-sm top-0 sticky z-50 m-0 p-2`}
       >
         <nav className="w-full z-50 pt-2 max-md:pt-0">
-          <div className="justify-between px-4 max-md:px-2 mx-auto lg:max-w-7xl md:items-center md:flex">
+          <div className="justify-between px-10 max-md:px-7 mx-auto lg:max-w-7xl md:items-center md:flex">
             <div>
               <div className="flex items-center justify-between py-1 md:block">
                 <Link
-                  className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#ffffff] font-Poppins p-5"
+                  className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#ffffff] font-Poppins"
                   href="/"
                 >
                   <Image
-                    width={180}
+                    width={130}
                     height={50}
                     src="/main.gif"
-                    className="brightness-95"
+                    className="brightness-95 max-md:w-[110px]"
                   />
                 </Link>
 
                 <div className="md:hidden">
                   <button
-                    className="p-2 text-[#ffffff] rounded-md outline-none"
+                    className="p-2 text-gray-300 rounded-md outline-none"
                     onClick={() => setNavbar(!navbar)}
                   >
                     {navbar ? (
@@ -92,11 +92,14 @@ const Header = () => {
           </div>
         </nav>
       </motion.nav>
-      <div className="sticky w-16 max-md:w-11 p-2 top-96 max-md:top-[670px] z-50 flex flex-col justify-center items-center gap-8 bg-black rounded-br-lg rounded-tr-lg bg-opacity-80">
-        <Link href="https://github.com/logos" className="text-white ">
+      <div className="sticky w-16 max-md:w-11 p-2 top-96 max-md:top-[450px] z-50 flex flex-col justify-center items-center gap-8 bg-black rounded-br-lg rounded-tr-lg bg-opacity-70">
+        <Link href="https://github.com/gelentolga" className="text-white ">
           <Image width={40} height={40} src="/github-mark-white.png" />
         </Link>
-        <Link href="https://github.com/logos" className="text-white ">
+        <Link
+          href="https://www.linkedin.com/in/tolga-gel/"
+          className="text-white "
+        >
           <Image width={40} height={40} src="/linkedin.svg" />
         </Link>
       </div>
