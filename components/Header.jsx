@@ -24,12 +24,13 @@ const Header = () => {
                   className="text-3xl hover:tracking-tight tracking-tighter font-semibold max-md:text-xl text-[#ffffff] font-Poppins"
                   href="/"
                 >
-                  <Image
+                  TOLGA
+                  {/* <Image
                     width={130}
                     height={50}
                     src="/main.gif"
                     className="brightness-95 max-md:w-[110px]"
-                  />
+                  /> */}
                 </Link>
 
                 <div className="md:hidden">
