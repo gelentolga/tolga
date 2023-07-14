@@ -11,7 +11,7 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative bg-black shadow-2xl max-md:shadow-lg rounded-b-full shadow-teal-300`}
+    className={`${styles.xPaddings} py-20 bg-transparent relative bg-black shadow-2xl max-md:shadow-lg rounded-b-full shadow-teal-300`}
   >
     <div className={`${styles.innerWidth}  mx-auto gap-8`}>
       {/* <div className="flex items-center justify-between flex-wrap gap-5">
