@@ -81,9 +81,9 @@ const Header = () => {
                   <li className="text-white">
                     <Link href="/#work">Work</Link>
                   </li>
-                  <li className="text-white">
+                  {/* <li className="text-white">
                     <Link href="/about">About</Link>
-                  </li>
+                  </li> */}
                   <li className="text-white">
                     <Link href="/post/earthly-wear/#contact">Contact US</Link>
                   </li>

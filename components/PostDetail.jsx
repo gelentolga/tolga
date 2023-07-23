@@ -143,6 +143,7 @@ const PostDetail = ({ post, index }) => {
           viewport={{ once: false, amount: 0 }}
           className={`${styles.innerWidth} `}
         >
+          <h1 className="py-4 text-[30px] font-bold">Problems</h1>
           <motion.div
             variants={fadeIn("right", "spring", index * 0, 1)}
             className="grid grid-cols-2 max-md:grid-cols-1 gap-20 max-md:gap-10 max-md:mb-10"
@@ -166,7 +167,7 @@ const PostDetail = ({ post, index }) => {
           </motion.div>
         </motion.div>
         <div className="mb-10">
-          <h1 className="py-6 text-[30px] font-bold">Solution</h1>
+          <h1 className="py-6 text-[30px] font-bold">Solutions</h1>
           {/* <p className="py-4 text-[30px] max-md:text-[25px] font-Poppins mb-10">
             {post.solution}
           </p> */}
@@ -184,17 +185,17 @@ const PostDetail = ({ post, index }) => {
               <div className="grid grid-cols-3 max-md:grid-cols-1 gap-20 max-md:gap-5 mb-0">
                 <div className="col-span-1 p-6 bg-gray-500 rounded-3xl">
                   <p className="text-[15px] font-light text-white">
-                    {post.firstGoal}
+                    {post.solution1}
                   </p>
                 </div>
                 <div className="grid-span-1 p-6 bg-gray-500 rounded-3xl">
                   <p className="text-[15px] font-light text-white">
-                    {post.secondGoal}
+                    {post.solution2}
                   </p>
                 </div>
                 <div className="grid-span-1 p-6 bg-gray-500 rounded-3xl">
                   <p className="text-[15px] font-light text-white">
-                    {post.secondGoal}
+                    {post.solution3}
                   </p>
                 </div>
               </div>
@@ -234,7 +235,7 @@ const PostDetail = ({ post, index }) => {
             <div className="grid grid-cols-6 max-md:grid-cols-1 max-md:pb-5 ">
               <div className="col-span-4 max-md:mb-5">
                 <h1 className="mb-5 underline text-lg">Primary Research</h1>
-                <p className="text-[30px] font-thin">{post.primaryResearch}</p>
+                <p className="text-[20px] font-thin">{post.primaryResearch}</p>
               </div>
               <div className="w-full col-span-2">
                 <Image
@@ -242,7 +243,7 @@ const PostDetail = ({ post, index }) => {
                   alt={post.title}
                   height={960}
                   width={1920}
-                  className=" h-[500px] max-sm:h-[400px] object-cover rounded-lg  "
+                  className=" h-[300px] max-sm:h-[200px] object-cover rounded-lg  "
                   id="work"
                 />
               </div>
@@ -250,9 +251,11 @@ const PostDetail = ({ post, index }) => {
             <div className="grid grid-cols-1 ">
               <div className="mb-10">
                 <h1 className="mb-5 underline text-lg">Secondary Research</h1>
-                <p className="">{post.secondaryResearch}</p>
+                <p className="font-thin text-[20px]">
+                  {post.secondaryResearch}
+                </p>
               </div>
-              <div className="w-full grid grid-cols-3 max-md:grid-cols-1 gap-4 mb-10">
+              {/* <div className="w-full grid grid-cols-3 max-md:grid-cols-1 gap-4 mb-10">
                 <div className="p-4 bg-gray-500 rounded-3xl text-white">
                   <div className="bg-white w-6 h-6 flex justify-center items-center rounded-full mb-4">
                     <span className="text-[20px]  text-[#5332fd] ">1</span>
@@ -271,7 +274,7 @@ const PostDetail = ({ post, index }) => {
                   </div>
                   <h2>{post.secondary3}</h2>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div>
@@ -289,7 +292,7 @@ const PostDetail = ({ post, index }) => {
             <div className="mb-10">
               <div className="mb-10">
                 <h1 className="mb-5 underline text-lg">Affinity Clustering</h1>
-                <p className="">{post.primaryResearch}</p>
+                <p className="font-thin text-[20px]">{post.primaryResearch}</p>
               </div>
               <div className="w-full">
                 <Image
@@ -328,7 +331,7 @@ const PostDetail = ({ post, index }) => {
               </div>
               <div className="mb-10">
                 <h1 className="mb-5 underline text-lg">Design</h1>
-                <p className="">{post.prototypingDesc1}</p>
+                <p className="font-thin text-[20px]">{post.prototypingDesc1}</p>
               </div>
               <div className="w-full">
                 <Image
@@ -351,16 +354,16 @@ const PostDetail = ({ post, index }) => {
                 Final Design
               </span>
             </div>
-            <p className="py-4 font-black text-[20px] font-Poppins mb-5">
+            <p className="py-4 font-black text-[20px] font-Poppins mb-5 ">
               {post.finalDesign}
             </p>
             <div className="mb-10">
               <div className="mb-10">
                 <h1 className="mb-5 underline text-lg">Affinity Clustering</h1>
-                <p className="">{post.finalDesignDesc1}</p>
+                <p className="font-thin text-[20px]">{post.finalDesignDesc1}</p>
               </div>
               <div className="mb-10">
-                <p className="">{post.finalDesignDesc2}</p>
+                <p className="font-thin text-[20px]">{post.finalDesignDesc2}</p>
               </div>
               <div className="w-full mb-10">
                 <Image
@@ -383,7 +386,7 @@ const PostDetail = ({ post, index }) => {
                 />
               </div>
               <div className="mb-10">
-                <p className="">{post.finalDesignDesc3}</p>
+                <p className="font-thin text-[20px]">{post.finalDesignDesc3}</p>
               </div>
               <div className="w-full mb-10">
                 <Image
@@ -396,7 +399,7 @@ const PostDetail = ({ post, index }) => {
                 />
               </div>
               <div className="mb-10">
-                <p className="">{post.finalDesignDesc4}</p>
+                <p className="font-thin text-[20px]">{post.finalDesignDesc4}</p>
               </div>
               <div className="w-full mb-10">
                 <Image
@@ -419,7 +422,7 @@ const PostDetail = ({ post, index }) => {
                 />
               </div>
               <div className="mb-10">
-                <p className="">{post.lastDesc}</p>
+                <p className="font-thin text-[20px]">{post.lastDesc}</p>
               </div>
             </div>
           </div>
