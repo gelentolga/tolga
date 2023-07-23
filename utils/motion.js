@@ -151,7 +151,7 @@ export const footerVariants = {
   },
   show: {
     opacity: 1,
-    y: -50,
+    y: -0,
     transition: {
       type: "spring",
       stiffness: 80,

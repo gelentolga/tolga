@@ -8,7 +8,7 @@ import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => (
-  <div className="w-full x` h-[500px] bg-bg-colorfull bg-no-repeat bg-cover ">
+  <div className="w-full x` h-[500px] max-md:h-[300px] bg-bg-colorfull bg-no-repeat bg-cover ">
     {/* <div className="bg-gray-100 bg-opacity-80 rounded-lg p-4 shadow-2xl text-justify h-full">
       <h1 className="font-black tracking-tighter text-[20px] text-[#5332fd]">
         Hi, I'm [your name], a frontend developer with [number] years of
@@ -19,7 +19,7 @@ const About = () => (
         enjoy [list hobbies/interests/passions].
       </h1>
     </div> */}
-    <div className="w-full h-full absolute  max-md:-bottom-0 bg-black bg-opacity-20" />
+    <div className="w-full h-full absolute  max-md:-bottom-0 bg-black bg-opacity-60" />
     <section
       className={`relative z-10 mb-0 h-[520px] max-md:h-[360px] justify-center items-start grid grid-cols-1 max-md:grid-cols-1`}
     >
@@ -61,25 +61,29 @@ const About = () => (
           opacity: [1, 1],
         }}
         transition={{ duration: 5, repeat: Infinity }}
-        className={`relative h-[500px] max-lg:h-[400px] max-md:h-[200px] grid place-items-center `}
+        className={`relative h-[500px] max-lg:h-[400px] max-md:h-[200px] grid place-items-center gap-5 `}
       >
         <div className="flex flex-col items-center justify-center">
-          <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4 -mt-4 -ml-10 shadow-2xl hover:skew-y-2 transition ease-out hover:scale-125 hover:shadow-xl hover:shadow-teal-200">
-            <p className="p-text font-Poppins text-xl max-md:text-sm font-thin pt-5">
-              I have developed a solid foundation in
-              <br /> various technologies such as
-              <br />
-              JavaScript, ReactJs, NextJs,
-              <br />
-              Tailwind, Bootstrap, RestAPI,
-              <br />
-              MaterialUI, Git, GitHub, SQL and NoSQL.
-              <br />
-              This has enabled me to build
-              <br /> responsive and user-friendly <br />
-              websites and applications.
-            </p>
-            <p className="p-text font-Poppins pb-0">UX-UI Designer</p>
+          <div className="">
+            <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4 mt-10  shadow-2xl hover:skew-y-2 transition ease-out hover:scale-125 max-md:hover:scale-105 hover:shadow-xl hover:shadow-teal-200">
+              <Image
+                src="/programming-logos.png"
+                width={500}
+                height={500}
+                className="max-md:w-[300px]"
+              />
+            </div>
+
+            <div className="flex flex-col items-center justify-center">
+              <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4  shadow-2xl hover:skew-y-2 transition ease-out hover:scale-125 max-md:hover:scale-105 hover:shadow-xl hover:shadow-teal-200">
+                <Image
+                  src="/design-logos.png"
+                  width={400}
+                  height={500}
+                  className="max-md:w-[200px]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>

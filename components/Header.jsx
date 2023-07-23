@@ -94,12 +94,17 @@ const Header = () => {
         </nav>
       </motion.nav>
       <div className="sticky w-16 max-md:w-11 p-2 top-96 max-md:top-[450px] z-50 flex flex-col justify-center items-center gap-8 bg-black rounded-br-lg rounded-tr-lg bg-opacity-70">
-        <Link href="https://github.com/gelentolga" className="text-white ">
+        <Link
+          href="https://github.com/gelentolga"
+          className="text-white "
+          target="_blank"
+        >
           <Image width={40} height={40} src="/github-mark-white.png" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/tolga-gel/"
           className="text-white "
+          target="_blank"
         >
           <Image width={40} height={40} src="/linkedin.svg" />
         </Link>

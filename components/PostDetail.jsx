@@ -166,10 +166,10 @@ const PostDetail = ({ post, index }) => {
           </motion.div>
         </motion.div>
         <div className="mb-10">
-          <h1 className="py-4 text-[30px] font-bold">Solution</h1>
-          <p className="py-4 text-[30px] max-md:text-[25px] font-Poppins mb-10">
+          <h1 className="py-6 text-[30px] font-bold">Solution</h1>
+          {/* <p className="py-4 text-[30px] max-md:text-[25px] font-Poppins mb-10">
             {post.solution}
-          </p>
+          </p> */}
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -179,9 +179,9 @@ const PostDetail = ({ post, index }) => {
           >
             <motion.div
               variants={fadeIn("right", "spring", index * 0, 1)}
-              className=" gap-20 max-md:gap-10 max-md:mb-10"
+              className=" gap-10 max-md:gap-10 max-md:mb-0"
             >
-              <div className="grid grid-cols-3 max-md:grid-cols-1 gap-20 max-md:gap-5 mb-10">
+              <div className="grid grid-cols-3 max-md:grid-cols-1 gap-20 max-md:gap-5 mb-0">
                 <div className="col-span-1 p-6 bg-gray-500 rounded-3xl">
                   <p className="text-[15px] font-light text-white">
                     {post.firstGoal}
@@ -206,7 +206,7 @@ const PostDetail = ({ post, index }) => {
               alt={post.title}
               height={960}
               width={1920}
-              className=" h-[500px] max-sm:h-[400px] max-md:object-cover object-contain rounded-lg  "
+              className=" h-[800px] max-sm:h-[400px] max-md:object-cover object-contain rounded-lg  "
               id="work"
             />
           </div>
@@ -234,7 +234,7 @@ const PostDetail = ({ post, index }) => {
             <div className="grid grid-cols-6 max-md:grid-cols-1 max-md:pb-5 ">
               <div className="col-span-4 max-md:mb-5">
                 <h1 className="mb-5 underline text-lg">Primary Research</h1>
-                <p className="">{post.primaryResearch}</p>
+                <p className="text-[30px] font-thin">{post.primaryResearch}</p>
               </div>
               <div className="w-full col-span-2">
                 <Image
