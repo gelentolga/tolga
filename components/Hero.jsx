@@ -65,7 +65,7 @@ const About = () => (
       >
         <div className="flex flex-col items-center justify-center">
           <div className="">
-            <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4 mt-10  shadow-2xl hover:skew-y-2 transition ease-out hover:scale-125 max-md:hover:scale-105 hover:shadow-xl hover:shadow-teal-200">
+            <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4 mt-10  shadow-2xl hover:skew-y-2 transition ease-out hover:scale-125 max-md:hover:scale-105 hover:shadow-2xl hover:shadow-teal-200">
               <Image
                 src="/programming-logos.png"
                 width={500}
@@ -75,7 +75,7 @@ const About = () => (
             </div>
 
             <div className="flex flex-col items-center justify-center">
-              <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4  shadow-2xl hover:skew-y-2 transition ease-out hover:scale-125 max-md:hover:scale-105 hover:shadow-xl hover:shadow-teal-200">
+              <div className=" bg-black text-center text-white bg-opacity-80 rounded-lg p-4  shadow-3xl hover:skew-y-2 transition ease-out hover:scale-125 max-md:hover:scale-105 hover:shadow-3xl hover:shadow-teal-200">
                 <Image
                   src="/design-logos.png"
                   width={400}

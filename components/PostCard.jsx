@@ -11,29 +11,27 @@ const PostCard = ({ post, index }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0, 0.5)}
-      className="h-[600px] max-md:h-[400px]  flex flex-wrap justify-evenly max-sm:grid-cols-1 my-0 max-md:my-16 "
+      className="h-[600px] max-md:h-[400px] mt-24  flex flex-wrap justify-evenly max-sm:grid-cols-1 my-0 max-md:my-16 "
     >
       <div className=" pt-20 max-md:pl-0 max-md:text-center ">
         <Link href={`/post/${post.slug}`}>
           <h3 className=" hover:text-[#42fbae] font-semibold duration-500 text-white text-3xl max-md:text-xl">
             {post.title}
           </h3>
-          <div className="mt-0">
-            <span className="text-xl font-thins text-white">
-              {post.excerpt}
-            </span>
+          <div className="mt-0 w-[550px] pt-5">
+            <span className="text-xl font-thin text-white">{post.excerpt}</span>
           </div>
         </Link>
       </div>
       <div className=" pt-20">
         <Link href={`/post/${post.slug}`} className="">
-          <div className="relative w-[350px] h-[300px] mx-10 max-md:h-[200px] max-lg:h-[200px] flex items-center skew-y-6 max-md:skew-y-0 hover:skew-y-0 transition ease-out rounded-lg p-4 shadow-2xl shadow-teal-300">
+          <div className="relative w-[550px] h-[350px] mx-10 max-md:h-[200px] max-lg:h-[200px] flex items-center skew-y-6 max-md:skew-y-0 hover:skew-y-0 transition ease-out rounded-lg p-4 shadow-3xl shadow-teal-300">
             <Image
               src={post.featuredImage.url}
               alt={post.title}
               height={300}
               width={300}
-              className=" h-fit max-md:h-fit w-fit object-contain max-md:object-cover rounded-b-3xl shadow-2xl shadow-teal-300  "
+              className=" h-[300px] max-md:h-fit w-fit bg-transparent bg-opacity-25 object-contain max-md:object-cover rounded-b-3xl  "
               id="work"
             />
           </div>
