@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { submitComment } from "../services";
+import Link from "next/link";
 
 const CommentsForm = ({ slug }) => {
   const [error, setError] = useState(false);
@@ -140,6 +141,9 @@ const CommentsForm = ({ slug }) => {
             Comment submitted for review
           </span>
         )}
+      </div>
+      <div className="mt-5 text-lg underline">
+        <Link href="/">Back to home page.</Link>
       </div>
     </div>
   );
