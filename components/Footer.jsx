@@ -37,7 +37,9 @@ const Footer = () => (
 
       <div className="flex flex-wrap items-center justify-center">
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] pl-20 text-white">T G</h4>
+          <h4 className="font-extrabold text-[24px] pl-20 max-md:pl-0 text-white">
+            T G
+          </h4>
           {/* <p className="font-normal text-[14px] text-white opacity-50">
             Copyright © 2021 - 2022 Metaversus. All rights reserved.
           </p> */}
